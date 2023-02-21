@@ -1,0 +1,27 @@
+
+;<7. Program to add four digit BCD.>
+
+
+;
+
+
+
+MVI C, 00H
+LHLD 8500H
+XCHG
+LHLD 8502H
+MOV A, E
+ADD L
+DAA
+JNC Loop1
+INR D
+Loop1: STA 8600H
+MOV A, D
+ADD H
+DAA
+JNC Loop2
+INR C
+Loop2: STA 8601H
+MOV A, C
+STA 8602H
+HLT
