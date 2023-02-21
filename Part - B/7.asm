@@ -1,0 +1,25 @@
+
+;<7. Program to subtract 16-bit numbers.>
+
+
+;
+
+
+MVI C, 00H
+LHLD 8500H
+XCHG
+LHLD 8502H
+MOV A, E
+SUB L
+JNC Loop1
+DCR D
+Loop1: STA 8504H
+MOV A, D
+SUB H
+JNC Loop2
+INR C
+Loop2: STA 8505H
+MOV A, C
+STA 8506H
+HLT
+
