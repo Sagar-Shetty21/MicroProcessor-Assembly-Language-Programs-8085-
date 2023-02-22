@@ -1,5 +1,5 @@
 
-;<Addition of 8-bit hex numbers>
+;<2A. Addition of 8-bit hex numbers>
 
 
 ;set memory address start to 3000H.

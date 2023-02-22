@@ -1,5 +1,5 @@
 
-;<Subtraction of 2 8-bit hex numbers>
+;<2B. Subtraction of 2 8-bit hex numbers>
 
 
 ;
